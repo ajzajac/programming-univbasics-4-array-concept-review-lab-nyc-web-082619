@@ -2,7 +2,7 @@ def find_element_index(array, value_to_find)
 count = 0
 while array[count] != array[value_to_find]
 count += 1 
-
+array.index { |x| x == value_to_find }
 end
 end
 
